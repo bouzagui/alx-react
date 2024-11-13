@@ -7,7 +7,6 @@ import BodySection from "../BodySection/BodySection";
 import BodySectionWithMarginBottom from "../BodySection/BodySectionWithMarginBottom";
 import CourseList from "../CourseList/CourseList";
 import PropTypes from "prop-types";
-import "./App.css";
 import { getLatestNotification } from "../utils/utils";
 import { StyleSheet, css } from 'aphrodite';
 
