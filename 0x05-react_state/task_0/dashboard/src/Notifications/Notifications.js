@@ -1,9 +1,11 @@
+
 import React, { Component } from "react";
 import { StyleSheet, css } from "aphrodite";
 import closeIcon from "../assets/close-icon.png";
 import NotificationItem from "./NotificationItem";
 import PropTypes from "prop-types";
 import NotificationItemShape from "./NotificationItemShape";
+
 
 export default class Notifications extends Component {
   constructor(props) {
@@ -24,7 +26,7 @@ export default class Notifications extends Component {
     return (
       <React.Fragment>
         {!this.props.displayDrawer ? (
-          <div className={css(styles.menuItem)} onClick={this.handleDisplayDrawer}>
+          <div className={css(styles.menuItem)} onClick={this.props.handleDisplayDrawer}>
             <p>Your notifications</p>
           </div>
         ) : (
